@@ -105,7 +105,7 @@ monogatari.script ({
         'show background world with fadeIn',
         'narrator: You suddenly find yourself transported to another world. Before you stands an old man with a long beard who appears to be a sage, known simply as "The Master."',
         'show character master normal at center with fadeIn',
-        'master: Bonjour, étranger. Qui êtes-vous?',
+        'master: Bonjour, étranger. Qui êtes-vous? Étranger, comprends-tu le français ? Non, cela doit être difficile de te poser cette question si soudainement',
         'narrator: The master realizes you don’t understand and switches to English.',
         'master: Hello, stranger. Who are you?',
         {
