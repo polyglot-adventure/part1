@@ -241,3 +241,34 @@ input[type=range]::-ms-fill-upper {
 @media screen and (min-width : 30em) {
 
 }
+
+@media (orientation: portrait) {
+    #monogatari {
+        width: 100vw;
+        height: 100vh;
+        font-size: 12px; /* 縦向き用に小さめのフォント */
+    }
+    visual-novel {
+        display: flex;
+        flex-direction: column; /* 縦向きに要素を縦並びにする */
+    }
+}
+
+@media (orientation: landscape) {
+    #monogatari {
+        width: 100vw;
+        height: 100vh;
+        font-size: 16px; /* 横向き用に大きめのフォント */
+    }
+    visual-novel {
+        display: flex;
+        flex-direction: row; /* 横向きに要素を横並びにする */
+    }
+}
+
+visual-novel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}

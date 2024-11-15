@@ -37,3 +37,17 @@ $_ready (() => {
 	});
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const monogatariElement = document.getElementById('monogatari');
+
+    function adjustGameSize() {
+        monogatariElement.style.width = `${window.innerWidth}px`;
+        monogatariElement.style.height = `${window.innerHeight}px`;
+    }
+
+    // 初期化時にサイズ調整
+    adjustGameSize();
+
+    // 画面のリサイズ時にも調整
+    window.addEventListener('resize', adjustGameSize);
+});
