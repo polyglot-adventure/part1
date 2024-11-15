@@ -241,22 +241,3 @@ input[type=range]::-ms-fill-upper {
 @media screen and (min-width : 30em) {
 
 }
-
-/* styles.css に追加 */
-@media (orientation: portrait) {
-    /* 縦向き時のスタイル */
-    .monogatari-container {
-        width: 100vw;
-        height: 100vh;
-        font-size: 14px; /* 縦向き用にフォントサイズを調整 */
-    }
-}
-
-@media (orientation: landscape) {
-    /* 横向き時のスタイル */
-    .monogatari-container {
-        width: 100vw;
-        height: 100vh;
-        font-size: 16px; /* 横向き用にフォントサイズを調整 */
-    }
-}

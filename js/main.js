@@ -36,3 +36,18 @@ $_ready (() => {
 
 	});
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    function adjustLayout() {
+        if (window.innerHeight > window.innerWidth) {
+            // 縦向きの設定
+            document.documentElement.style.setProperty('--font-size', '14px');
+        } else {
+            // 横向きの設定
+            document.documentElement.style.setProperty('--font-size', '16px');
+        }
+    }
+
+    window.addEventListener('resize', adjustLayout);
+    adjustLayout(); // 初期読み込み時にも実行
+});
