@@ -45,13 +45,29 @@ button:hover {
 
 /* Main Menu Styling */
 [data-screen="main"] {
+    background-image: url('../assets/images/title-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
+[data-screen="main"]::after {
+    content: '';
+    background: url('../assets/images/title-logo.png') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
 }
 
 /* Main Menu Buttons Styling */
 [data-screen="main"] button {
 
 }
+
 
 /**
  * ===========================
@@ -273,34 +289,3 @@ visual-novel {
     overflow: hidden;
 }
 
-.main-menu {
-    position: relative; /* ロゴの絶対位置調整に必要 */
-    background: url('./assets/scenes/title-background.jpg') no-repeat center center;
-    background-size: cover; /* 画像を画面全体に広げる（途切れるのを許容） */
-    width: 100%;
-    height: 100vh; /* 画面全体の高さ */
-    overflow: hidden; /* 余計なスクロールを防ぐ */
-}
-
-.main-menu-logo {
-    position: absolute;
-    top: 10%; /* ロゴの上方向の余白 */
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 80%; /* ロゴの最大幅 */
-    height: auto; /* アスペクト比を保つ */
-}
-
-@media (orientation: portrait) {
-    .main-menu-logo {
-        top: 15%; /* 縦向きの時に少し下げる */
-        max-width: 70%; /* 縦向きで幅を狭める */
-    }
-}
-
-@media (orientation: landscape) {
-    .main-menu-logo {
-        top: 10%; /* 横向きの時は上方向の余白を少なめに */
-        max-width: 50%; /* 横向きで幅をさらに狭める */
-    }
-}

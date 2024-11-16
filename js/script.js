@@ -63,12 +63,7 @@ monogatari.assets ('videos', {
 });
 
 // Define the images used in the game.
-monogatari.assets ('images', {
-
-});
-
-// Define the backgrounds for each scene.
-monogatari.assets ('scenes', {
+monogatari.assets ('images',  {
 
 });
 
@@ -98,6 +93,7 @@ monogatari.assets ('scenes', {
     'world': 'world.jpg',
     'goblin_village': 'goblin_village.jpg'
 });
+
 
 // スクリプト（シナリオ）
 monogatari.script ({
